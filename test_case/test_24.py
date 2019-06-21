@@ -19,7 +19,7 @@ class MyTestCase(unittest.TestCase):
                 'sign': ''}
         res = requests.get(url=self.url, params=data)
         print(res.text)
-        self.assertTrue(u"1" in res.text)
+        self.assertTrue(u"1123" in res.text)
 
     def tearDown(self):
         time.sleep(1)
